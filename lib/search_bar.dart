@@ -14,8 +14,10 @@ class searchBar extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Container(
+          
           width: MediaQuery.of(context).size.width * 0.7,
-          padding: EdgeInsets.symmetric(horizontal: 30),
+          padding: EdgeInsets.symmetric(horizontal: 30,
+          vertical: 20),
           decoration: BoxDecoration(
             color: Colors.blueGrey,
             borderRadius: BorderRadius.circular(30),
@@ -28,19 +30,24 @@ class searchBar extends StatelessWidget {
         ),
         Align(
           alignment: Alignment.centerRight,
-          child: MaterialButton(
+          child: MaterialButton (
+            child: Text("Filter"),
             onPressed: () {},
             color: Colors.black,
+            
             padding: EdgeInsets.symmetric(
               horizontal: 10,
               vertical: 10,
             ),
-            shape: RoundedRectangleBorder(
+             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30),
+              
+            ),
+            
             ),
             
           ),
-        ),
+        
       ],
     );
   }
